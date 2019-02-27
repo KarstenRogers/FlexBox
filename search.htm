@@ -6,7 +6,52 @@
   <title>short forms</title>
   <link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
   <style>
-    /*styles go here*/
+    input[type="search"] {
+      box-sizing: border-box;
+      background: #E9E9E9;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      padding: 0.35em 0.75em;
+      border: none;
+      font-size: 1.1em;
+      text-decoration: none;
+      line-height: normal;
+      max-height: 3em;
+    }
+
+    button[type="submit"] {
+      box-sizing: border-box;
+      border-radius: 0px 2px 2px 0px;
+      background: #8B798C;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: white;
+      padding: 0.35em 0.75em;
+      border: none;
+      font-size: 1.1em;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background: #C17CCF;
+    }
+    /*Flex it*/
+
+    .search-form {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    input[type="search"] {
+      flex: 2 0 250px;
+    }
+
+    button[type="submit"] {
+      flex: 1 0 90px;
+    }
+
 </style>
 </head>
 
