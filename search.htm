@@ -6,6 +6,12 @@
   <title>short forms</title>
   <link href="_css/base.css" rel="stylesheet" type="text/css" media="screen">
   <style>
+
+    .search-form {
+      width: 80%;
+      margin: 0 auto;
+    }
+
     input[type="search"] {
       box-sizing: border-box;
       background: #E9E9E9;
@@ -50,6 +56,17 @@
 
     button[type="submit"] {
       flex: 1 0 90px;
+    }
+
+    @media (max-width: 450px) {
+      body {
+        width: 100%;
+        margin: 0;
+        padding: 1em 0 2em;
+      }
+      header {
+        padding: 2% 5%;
+      }
     }
 
 </style>
